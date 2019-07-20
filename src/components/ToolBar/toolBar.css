@@ -1,0 +1,31 @@
+.toolbar {
+  width: 40px;
+  background-color: #1d1e2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-button {
+  margin-top: 20px;
+  padding: 7px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.icon-button:hover {
+  background-color: #30313d;
+  border-radius: 3px;
+}
+
+.icon-button > svg {
+  color: #ccc;
+}
+
+.active > svg {
+  color: #3eb568;
+}

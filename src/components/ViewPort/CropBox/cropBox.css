@@ -1,0 +1,83 @@
+.crop-box {
+  z-index: 1;
+  position: absolute;
+  border: 1px solid;
+  border-image-source: url("../../../imgs/green_border.png");
+  border-image-slice: 1;
+  border-image-repeat: repeat;
+}
+.crop-box.active {
+  border: 1px solid;
+  border-image-source: url("../../../imgs/green_border.gif");
+  border-image-slice: 1;
+  border-image-repeat: repeat;
+  cursor: move;
+}
+.crop-box.disable {
+  border-image-source: url("../../../imgs/disable_border.png");
+  border-image-slice: 1;
+  border-image-repeat: repeat;
+  cursor: auto;
+}
+.crop-handle {
+  width: 7px;
+  height: 7px;
+  background-color: #48cf73;
+  position: absolute;
+  display: none;
+}
+.crop-box.active .crop-handle {
+  display: block;
+}
+.dir-nw {
+  cursor: nw-resize;
+}
+.dir-n {
+  cursor: n-resize;
+}
+.dir-ne {
+  cursor: ne-resize;
+}
+.dir-w {
+  cursor: w-resize;
+}
+.dir-e {
+  cursor: e-resize;
+}
+.dir-sw {
+  cursor: sw-resize;
+}
+.dir-s {
+  cursor: s-resize;
+}
+.dir-se {
+  cursor: se-resize;
+}
+.crop-header {
+  color: white;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  position: absolute;
+  top: -2.3rem;
+  width: 100%;
+  min-width: max-content;
+}
+.crop-title {
+  padding: 0.2rem 0 0.1rem 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.crop-label {
+  padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+  background-color: #369b54;
+  border: 1px solid #48cf73;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.crop-box.active .crop-header {
+  cursor: auto;
+}
+.crop-box.disable .crop-label {
+  background-color: #245c36;
+  border-color: #3f7340;
+}

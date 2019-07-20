@@ -1,0 +1,33 @@
+.objects-panel {
+  width: 300px;
+  background-color: #1d1e2a;
+  color: white;
+}
+.objects-list-header {
+  padding: 0.5rem 1.2rem 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #262839;
+}
+.objects-panel .icon-eye {
+  color: #aaa;
+}
+.objects-panel .icon-angle-down,
+.objects-panel .icon-angle-up {
+  position: absolute;
+  right: 1rem;
+}
+.objects-list-body {
+  background-color: #1d1e2a;
+  padding: 0.5rem 1.2rem 0.5rem 0;
+}
+.objects-list-body > ul {
+  /* height: 100px; */
+  overflow-y: auto;
+}
+.objects-list-body > ul > li {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+}

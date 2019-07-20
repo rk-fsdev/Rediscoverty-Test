@@ -1,0 +1,15 @@
+.viewport {
+  background-color: #13121b;
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.image-container {
+  position: relative;
+}
+
+.image-container.cropped > .background-image {
+  opacity: 0.5;
+}
